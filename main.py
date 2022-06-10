@@ -22,17 +22,18 @@ class Window(Frame):
         self.backcolor="black"
         self.fgcolor="green"
     
-        text=Label(self,text="Software is designed and developed by www.vickychhetri.com . ",font=("Times New Roman",19),bg=self.backcolor,fg="red")
+        text=Label(self,text="Software is designed and developed by www.vickychhetri.com . ",font=("Times New Roman",19),bg=self.backcolor,fg="green")
         text.place(x=70,y=350)
-  
-        startButton=Button(self,text="Start",command=self.startProgram,width="25", bg="red",fg="white")
-        startButton.place(x=160,y=200)
-
+        text=Label(self,text="Twitter Handler Auto. ",font=("Times New Roman",19),bg=self.backcolor,fg="green")
+        text.place(x=150,y=50)
+        self.startButton=Button(self,text="Start Processing",command=self.startProgram,width="80",font=("Times New Roman",10),height="10",bg="green",fg="white")
+        self.startButton.place(x=160,y=150)
     #Function to ADD message in random list
     def addItemInList(self):
         self.lb.insert('end', self.messageItem.get())
     def startProgram(self):
         try:
+            
             for each in self.array:
                 self.user = each[0] 
                 self.password = each[1]  

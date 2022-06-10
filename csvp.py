@@ -1,11 +1,11 @@
-import numpy as np
+# import numpy as np
 
-with open("userrecord.csv") as file_name:
-    array = np.loadtxt(file_name, delimiter=",",  dtype='str')
+# with open("userrecord.csv") as file_name:
+#     array = np.loadtxt(file_name, delimiter=",",  dtype='str')
 
 
-for each in array:
-    print(each[1])
+# for each in array:
+#     print(each[1])
 
 # import csv
 
