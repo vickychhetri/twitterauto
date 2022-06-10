@@ -1,14 +1,10 @@
 # twitterauto
 
 # DATABASE TO STORE AND CHECK POST
-# import sqlite3
+# sqlite3
 
-# conn = sqlite3.connect('tweet.db')
-# print("Opened database successfully")
+# tweet.db
 
-# conn.execute('''CREATE TABLE TwitterPOS
-#          (USER           TEXT    NOT NULL,
-#          POSTURL        TEXT     NOT NULL);''')
-# print("Table created successfully")
-
-# conn.close()
+CREATE TABLE TwitterPOS
+         (USER           TEXT    NOT NULL,
+   POSTURL        TEXT     NOT NULL);''')
