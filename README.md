@@ -1,5 +1,7 @@
 # twitterauto
 
+Twitterauto Tool can use to like and retweet post in twitter.
+
 # DATABASE TO STORE AND CHECK POST
 # sqlite3
 
