@@ -1,4 +1,4 @@
-
+# DATABASE TO STORE AND CHECK POST
 # # 01 
 
 # import sqlite3
