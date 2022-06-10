@@ -1,4 +1,5 @@
 #Program to login and send message to lover or hater all day
+from attr import validate
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -7,9 +8,10 @@ import random
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 import tkinter.messagebox
 from tkinter import *
-from PIL import Image, ImageTk
+# from PIL import Image, ImageTk
 import numpy as np
 import sqlite3
+import threading
 
 
 #Design Page
@@ -19,34 +21,44 @@ class Window(Frame):
             self.array = np.loadtxt(file_name, delimiter=",",  dtype='str')
         Frame.__init__(self,master)
         self.master=master
-        self.configure(bg="black")
+        self.configure(bg="white")
         self.pack(fill=BOTH,expand=1,ipadx="16",ipady="16")
-        self.backcolor="black"
-        self.fgcolor="green"
-    
-        text=Label(self,text="Software is designed and developed by www.vickychhetri.com . ",font=("Times New Roman",19),bg=self.backcolor,fg="green")
+        self.backcolor="white"
+        self.fgcolor="black"
+        text=Label(self,text=f"No. of Users to load: {len(self.array)}",font=("sans-serif",10),bg=self.backcolor,fg="black")
+        text.place(x=250,y=250)
+        text=Label(self,text="Software under www.vickychhetri.com . ",font=("sans-serif",10),bg=self.backcolor,fg="black")
         text.place(x=70,y=350)
-        text=Label(self,text="Twitter Handler Auto. ",font=("Times New Roman",19),bg=self.backcolor,fg="green")
-        text.place(x=150,y=50)
-        self.startButton=Button(self,text="Start Processing",command=self.startProgram,width="80",font=("Times New Roman",10),height="10",bg="green",fg="white")
+        text=Label(self,text="Twitter - Like and Retweet ",font=("sans-serif",19),bg="white",fg="blue")
+        text.place(x=300,y=20)
+        self.text2=Label(self,text="$>",font=("sans-serif",9),bg="white",fg="red")
+        self.text2.place(x=30,y=70)
+        
+        self.startButton=Button(self,text="Click Here to Restore Payload and Initiate Program",command=threading.Thread(target=self.startProgram).start,width="50",font=("sans-serif",15),height="2",bg="red",fg="white")
+        # self.sep=Separator(self,orient='horizontal')
+        # self.sep.place(x=0,y=150)
         self.startButton.place(x=160,y=150)
     #Function to ADD message in random list
     def addItemInList(self):
         self.lb.insert('end', self.messageItem.get())
     def startProgram(self):
+        self.startButton['text']="Program Initiated"
         try:
             for each in self.array:
                 self.user = each[0] 
                 self.password = each[1]  
                 self.unv=each[2]
                 self.to = each[3]
-                # options = FirefoxOptions()
-                # options.add_argument("--headless")
-                # driver = webdriver.Firefox(options=options)
-                driver = webdriver.Firefox()
+                options = FirefoxOptions()
+                options.add_argument("--headless")
+                driver = webdriver.Firefox(options=options)
+                # driver = webdriver.Firefox()
                 driver.get("https://twitter.com/i/flow/login")
                 #login
                 time.sleep(5)
+                # DROP MESSAGE
+                self.text2['text']=f"Email:{each[0]}  with \n\n username {each[2]} loaded."
+                time.sleep(1)
                 username=driver.find_element(By.CSS_SELECTOR, value=".r-30o5oe")
                 username.clear()
                 username.send_keys( self.user)
@@ -89,7 +101,8 @@ class Window(Frame):
                         n = cursor.fetchall()
                         
                         if (len(n)>0):
-                            print("No Need to like")
+                            self.text2['text']=f"Already Liked and retweeted \n Message: {n}"
+                            time.sleep(1)
                         else: 
                             likeClick = driver.find_element(By.CSS_SELECTOR, value="div.r-1h0z5md:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)").click()
                             time.sleep(1) 
@@ -107,6 +120,8 @@ class Window(Frame):
                             conn.execute(f"INSERT INTO TwitterPOS (USER,POSTURL) \
                                 VALUES ('{self.user}','{driver.current_url}' )")
                             conn.commit()
+                            self.text2['text']=f"like and retweet completed: \n like & retweet {self.user} {driver.current_url}"
+                            time.sleep(1)
                         driver.back()
                         driver.execute_script(f"window.scrollTo(0, {x*100});")
 
@@ -120,6 +135,7 @@ class Window(Frame):
                     finally:
                         conn.close()
                 driver.get("https://twitter.com/logout")
+                self.text2['text']=f"logout {self.user}"
                 time.sleep(5)
                 logoutclick = driver.find_element(By.CSS_SELECTOR, value="div.css-18t94o4:nth-child(1)").click()
             
@@ -131,7 +147,7 @@ root= Tk()
 app=Window(root)
 
 #SET TITLE
-root.wm_title("Software")
+root.wm_title("Works in Aryana Lab.")
 root.geometry("900x400")
 root.resizable(False,False)
 #Show WIindow

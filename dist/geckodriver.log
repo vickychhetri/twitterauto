@@ -1,0 +1,22 @@
+1654880850193	geckodriver	INFO	Listening on 127.0.0.1:49481
+1654880853454	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "49482" "-no-remote" "-profile" "C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofileQxKejZ"
+*** You are running in headless mode.
+1654880859547	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:49482
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofileQxKejZ\\search.json.mozlz4", (void 0)))
+1654880877989	Marionette	INFO	Listening on port 49487
+1654880878171	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:49482/devtools/browser/8a1e99d7-b0e0-45fd-b4c9-49c48a65caf3
+1654880950769	geckodriver	INFO	Listening on 127.0.0.1:49577
+1654880953862	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "49578" "-no-remote" "-profile" "C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofileq1Mogm"
+*** You are running in headless mode.
+1654880955066	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:49578
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofileq1Mogm\\search.json.mozlz4", (void 0)))
+1654880959842	Marionette	INFO	Listening on port 49583
+DevTools listening on ws://localhost:49578/devtools/browser/d667850a-b32a-4b87-b78f-086f1c4ced14
+1654880960215	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
