@@ -9,6 +9,8 @@ import tkinter.messagebox
 from tkinter import *
 from PIL import Image, ImageTk
 import numpy as np
+import sqlite3
+
 
 #Design Page
 class Window(Frame):
@@ -33,7 +35,6 @@ class Window(Frame):
         self.lb.insert('end', self.messageItem.get())
     def startProgram(self):
         try:
-            
             for each in self.array:
                 self.user = each[0] 
                 self.password = each[1]  
@@ -80,9 +81,32 @@ class Window(Frame):
                         print(f"working inside try {x}")
                         postclick = driver.find_element(By.CSS_SELECTOR, value=poststring).click()
                         time.sleep(5) 
-                        likeClick = driver.find_element(By.CSS_SELECTOR, value="div.r-1h0z5md:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)").click()
                         print(driver.current_url)
-                        time.sleep(1) 
+                        # Start Data check
+                        conn = sqlite3.connect('tweet.db')
+                        cursor = conn.execute(f"SELECT * from TwitterPOS where USER='{self.user}' AND POSTURL='{driver.current_url}'")
+
+                        n = cursor.fetchall()
+                        
+                        if (len(n)>0):
+                            print("No Need to like")
+                        else: 
+                            likeClick = driver.find_element(By.CSS_SELECTOR, value="div.r-1h0z5md:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)").click()
+                            time.sleep(1) 
+                            retweet = driver.find_element(By.CSS_SELECTOR, value="div.r-1h0z5md:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)").click()
+                            time.sleep(1) 
+                            retweetReclick = driver.find_element(By.CSS_SELECTOR, value="div.r-z2wwpe:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)").click()
+                            time.sleep(1)
+                            # Comment is not working till now , need to wrok in future 10/-6/2-22 recorded
+                            # comment=driver.find_element(By.CSS_SELECTOR, value=".DraftEditor-editorContainer")
+                            # comment.clear()
+                            # comment.send_keys("nice")
+                            # time.sleep(1)
+                            # reply = driver.find_element(By.CSS_SELECTOR, value="div.r-42olwf:nth-child(2)").click()
+                            conn = sqlite3.connect('tweet.db')
+                            conn.execute(f"INSERT INTO TwitterPOS (USER,POSTURL) \
+                                VALUES ('{self.user}','{driver.current_url}' )")
+                            conn.commit()
                         driver.back()
                         driver.execute_script(f"window.scrollTo(0, {x*100});")
 
@@ -93,6 +117,8 @@ class Window(Frame):
                         if x==3:
                             x=11
                         continue
+                    finally:
+                        conn.close()
                 driver.get("https://twitter.com/logout")
                 time.sleep(5)
                 logoutclick = driver.find_element(By.CSS_SELECTOR, value="div.css-18t94o4:nth-child(1)").click()
