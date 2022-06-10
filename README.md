@@ -7,4 +7,4 @@
 
 CREATE TABLE TwitterPOS
          (USER           TEXT    NOT NULL,
-   POSTURL        TEXT     NOT NULL);''')
+   POSTURL        TEXT     NOT NULL);
