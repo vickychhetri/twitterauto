@@ -10,9 +10,10 @@ import tkinter.messagebox
 from tkinter import *
 # from PIL import Image, ImageTk
 import numpy as np
+import pandas as pd
 import sqlite3
 import threading
-
+from tkinter import messagebox
 
 #Design Page
 class Window(Frame):
@@ -29,7 +30,7 @@ class Window(Frame):
         text.place(x=250,y=250)
         text=Label(self,text="Software under www.vickychhetri.com . ",font=("sans-serif",10),bg=self.backcolor,fg="black")
         text.place(x=70,y=350)
-        text=Label(self,text="Twitter - Like and Retweet ",font=("sans-serif",19),bg="white",fg="blue")
+        text=Label(self,text="Genius",font=("sans-serif",50),bg="white",fg="brown")
         text.place(x=300,y=20)
         self.text2=Label(self,text="$>",font=("sans-serif",9),bg="white",fg="red")
         self.text2.place(x=30,y=70)
@@ -49,10 +50,10 @@ class Window(Frame):
                 self.password = each[1]  
                 self.unv=each[2]
                 self.to = each[3]
-                options = FirefoxOptions()
-                options.add_argument("--headless")
-                driver = webdriver.Firefox(options=options)
-                # driver = webdriver.Firefox()
+                # options = FirefoxOptions()
+                # options.add_argument("--headless")
+                # driver = webdriver.Firefox(options=options)
+                driver = webdriver.Firefox()
                 driver.get("https://twitter.com/i/flow/login")
                 #login
                 time.sleep(5)
@@ -141,7 +142,34 @@ class Window(Frame):
             
         except:
             tkinter.messagebox.showerror('Software','Something went wrong, close the application and try again.')
+#function to generate report from sql
+def generateReport():
+    db_file="tweet.db"
+    conn = sqlite3.connect(db_file, isolation_level=None,
+                       detect_types=sqlite3.PARSE_COLNAMES)
+    db_df = pd.read_sql_query("SELECT * FROM TwitterPOS", conn)
+    db_df.to_csv('database.csv', index=False)
+#function to do nothing
+def donothing():
+   filewin = Toplevel(root)
+   button = Button(filewin, text="Do nothing button")
+   button.pack()
+#function to show about message
+def about():
+   info=''' Software is develop by the Vicky Chhetri. To Know More About, kindly visit vickychhetri.com or email at admin@vickychhetri.com
+   '''
+   messagebox.showinfo('information', info)
+#function to show help message
+def help():
+   info='''Email: admin@vickychhetri.com or Visit www.github.com/vickychhetri
 
+
+   1.) Mozila Browser to crawl, login and to do tasks.
+   2.) userrecords csv file as a payload.
+   
+   www.vickychhetri.com
+   '''
+   messagebox.showinfo('Help', info)
 #Initializa tkinter
 root= Tk()
 app=Window(root)
@@ -152,4 +180,19 @@ root.geometry("900x400")
 root.resizable(False,False)
 #Show WIindow
 root.call('wm','iconphoto',root._w,PhotoImage(file='icon.png'))
+menubar = Menu(root)
+filemenu = Menu(menubar, tearoff=0)
+filemenu.add_command(label="Show Report", command=generateReport)
+filemenu.add_separator()
+filemenu.add_command(label="Exit", command=root.quit)
+menubar.add_cascade(label="Report", menu=filemenu)
+ 
+helpmenu = Menu(menubar, tearoff=0)
+helpmenu.add_command(label="Help ", command=help)
+helpmenu.add_command(label="About...", command=about)
+menubar.add_cascade(label="Help", menu=helpmenu)
+
+root.config(menu=menubar)
+
+
 root.mainloop()
