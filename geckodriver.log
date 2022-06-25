@@ -3287,3 +3287,108 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://localhost:54690/devtools/browser/24f9eccb-99fc-4d32-9367-420d75426930
 1656090910235	Marionette	INFO	Stopped listening on port 54695
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1656146277534	geckodriver	INFO	Listening on 127.0.0.1:54729
+1656146280589	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54730" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofilensxZ05"
+1656146281196	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54730
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofilensxZ05\\search.json.mozlz4", (void 0)))
+1656146283219	Marionette	INFO	Listening on port 54735
+DevTools listening on ws://localhost:54730/devtools/browser/e108cd8e-ccb3-4474-8660-a2c58fdf0725
+1656146283279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656146308772	Marionette	INFO	Stopped listening on port 54735
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1656146343639	geckodriver	INFO	Listening on 127.0.0.1:54847
+1656146346717	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54848" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile0Oj5Na"
+1656146347040	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54848
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile0Oj5Na\\search.json.mozlz4", (void 0)))
+1656146348663	Marionette	INFO	Listening on port 54853
+DevTools listening on ws://localhost:54848/devtools/browser/54e6bdbb-f9df-43ee-8947-4c7d83b08e14
+1656146348782	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656146364152	Marionette	INFO	Stopped listening on port 54853
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1656146371688	geckodriver	INFO	Listening on 127.0.0.1:54936
+1656146374734	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54937" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofilew0mHz3"
+1656146375006	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54937
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofilew0mHz3\\search.json.mozlz4", (void 0)))
+1656146376903	Marionette	INFO	Listening on port 54943
+DevTools listening on ws://localhost:54937/devtools/browser/56af6dbc-e924-4a98-9c33-6586eea71c2c
+1656146377422	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+[Child 3880, MediaDecoderStateMachine #1] WARNING: 2e0ed0d2bd0 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:317
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+[Child 3880, MediaDecoderStateMachine #1] WARNING: 2e0ed00b890 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:317
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.d7efe778.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656146527068	Marionette	INFO	Stopped listening on port 54943
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+remote-debugging-port" "55035" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofileRdT3r4"
+1656146480914	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:55035
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofileRdT3r4\\search.json.mozlz4", (void 0)))
+1656146483097	Marionette	INFO	Listening on port 55047
+DevTools listening on ws://localhost:55035/devtools/browser/bf8f423d-37c2-4703-a910-895837142e39
+1656146483609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656146531640	Marionette	INFO	Stopped listening on port 55047
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1656146550663	geckodriver	INFO	Listening on 127.0.0.1:55122
+1656146553732	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55123" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile6N8Iog"
+1656146554042	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:55123
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile6N8Iog\\search.json.mozlz4", (void 0)))
+1656146555838	Marionette	INFO	Listening on port 55128
+DevTools listening on ws://localhost:55123/devtools/browser/e3700ddb-28ef-4d07-9af7-79563850e5ce
+1656146555897	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656146771290	Marionette	INFO	Stopped listening on port 55128
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1656146772406	geckodriver	INFO	Listening on 127.0.0.1:55264
+1656146775438	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55265" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile9yts6i"
+1656146775794	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:55265
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile9yts6i\\search.json.mozlz4", (void 0)))
+1656146777235	Marionette	INFO	Listening on port 55270
+DevTools listening on ws://localhost:55265/devtools/browser/ea8ea6bc-e5ce-4991-9558-f88b27a1d557
+1656146777480	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+[Child 13784, MediaDecoderStateMachine #1] WARNING: 1798789c020 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:317
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.d7efe778.js, line 17: Error: ApiError: https://twitter.com/i/api/1.1/jot/ces/p2 HTTP-0 codes:[1004] trace_ids:[null]
+1656146903901	Marionette	INFO	Stopped listening on port 55270
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+tte	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:55357
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofileJNgciA\\search.json.mozlz4", (void 0)))
+1656146882064	Marionette	INFO	Listening on port 55363
+1656146882079	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:55357/devtools/browser/c05303ef-c285-4a1e-9223-857821bafc7e
+1656146902348	Marionette	INFO	Stopped listening on port 55363
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
