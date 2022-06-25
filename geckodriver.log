@@ -3215,3 +3215,75 @@ JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
 ###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
 
 JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.c5bf73e8.js, line 12: Error: ApiError: https://api.twitter.com/1.1/help/settings.json HTTP-0 codes:[1004] trace_ids:[null]
+1654881336777	geckodriver	INFO	Listening on 127.0.0.1:49673
+1654881339995	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "49674" "-no-remote" "-profile" "C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofileaFacUv"
+*** You are running in headless mode.
+1654881340878	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:49674
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofileaFacUv\\search.json.mozlz4", (void 0)))
+1654881345363	Marionette	INFO	Listening on port 49679
+DevTools listening on ws://localhost:49674/devtools/browser/2d8b691f-51eb-4368-a49f-998ca49755c5
+1654881345855	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1656090523823	geckodriver	INFO	Listening on 127.0.0.1:54337
+1656090526996	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "54338" "-no-remote" "-profile" "C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofileMd5Ev8"
+*** You are running in headless mode.
+1656090534587	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54338
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofileMd5Ev8\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1656090555684	Marionette	INFO	Listening on port 54343
+1656090555878	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:54338/devtools/browser/9dbcf885-a4a3-42d5-b486-fdc3054f827b
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1:54472
+1656090643017	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54473" "-no-remote" "-profile" "C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofile4TOQws"
+1656090645202	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54473
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofile4TOQws\\search.json.mozlz4", (void 0)))
+1656090669280	Marionette	INFO	Listening on port 54478
+DevTools listening on ws://localhost:54473/devtools/browser/30dc08d6-d689-4d13-a4cd-fb96b8b42ed0
+1656090670021	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1656090718328	Marionette	INFO	Stopped listening on port 54478
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 694: TypeError: this.tablesData[table] is undefined
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Child][PContentChild] Error: Send(msgname=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Parent 5076, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1656090751549	geckodriver	INFO	Listening on 127.0.0.1:54581
+1656090754670	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54582" "-no-remote" "-profile" "C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofiledhJe9K"
+1656090760909	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54582
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofiledhJe9K\\search.json.mozlz4", (void 0)))
+1656090777997	Marionette	INFO	Listening on port 54591
+1656090778157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:54582/devtools/browser/00e6f9f4-d858-4031-a744-f28b2577ce9c
+1656090800251	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1656090821418	Marionette	INFO	Stopped listening on port 54591
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping
+1656090852502	geckodriver	INFO	Listening on 127.0.0.1:54689
+1656090855493	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54690" "-no-remote" "-profile" "C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofile8bPQnA"
+1656090857388	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54690
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\chhetri\\AppData\\Local\\Temp\\rust_mozprofile8bPQnA\\search.json.mozlz4", (void 0)))
+1656090867875	Marionette	INFO	Listening on port 54695
+1656090868234	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:54690/devtools/browser/24f9eccb-99fc-4d32-9367-420d75426930
+1656090910235	Marionette	INFO	Stopped listening on port 54695
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
